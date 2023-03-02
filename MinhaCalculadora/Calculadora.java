@@ -1,5 +1,7 @@
 package MinhaCalculadora;
 
+import org.jetbrains.annotations.NotNull;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -82,25 +84,47 @@ public class Calculadora extends JFrame implements ActionListener {
         new Calculadora();
     }
 
-    public void actionPerformed(final ActionEvent e) {
-        if (e.getSource() == this.button1) {
-            this.textField.setText(this.textField.getText() + "1");
-        } else if (e.getSource() == this.button2) {
-            this.textField.setText(this.textField.getText() + "2");
-        } else if (e.getSource() == this.button3) {
-            this.textField.setText(this.textField.getText() + "3");
-        } else if (e.getSource() == this.button4) {
-            this.textField.setText(this.textField.getText() + "4");
-        } else if (e.getSource() == this.button5) {
-            this.textField.setText(this.textField.getText() + "5");
-        } else if (e.getSource() == this.button6) {
-            this.textField.setText(this.textField.getText() + "6");
-        } else if (e.getSource() == this.button7) {
-            this.textField.setText(this.textField.getText() + "7");
-        } else if (e.getSource() == this.button8) {
-            this.textField.setText(this.textField.getText() + "8");
-        } else if (e.getSource() == this.button9) {
-            this.textField.setText(this.textField.getText() + "9");
+    public final void actionPerformed(@NotNull ActionEvent e) {
+        if (e.getSource() == button1) {
+            textField.setText(textField.getText() + "1");
+        } else if (e.getSource() == button2) {
+            textField.setText(textField.getText() + "2");
+        } else if (e.getSource() == button3) {
+            textField.setText(textField.getText() + "3");
+        } else if (e.getSource() == button4) {
+            textField.setText(textField.getText() + "4");
+        } else if (e.getSource() == button5) {
+            textField.setText(textField.getText() + "5");
+        } else if (e.getSource() == button6) {
+            textField.setText(textField.getText() + "6");
+        } else if (e.getSource() == button7) {
+            textField.setText(textField.getText() + "7");
+        } else if (e.getSource() == button8) {
+            textField.setText(textField.getText() + "8");
+        } else if (e.getSource() == button9) {
+            textField.setText(textField.getText() + "9");
+        } else if (e.getSource() == button0) {
+            textField.setText(textField.getText() + "0");
+        } else if (e.getSource() == buttonMais) {
+            primeiroNumero = Double.parseDouble(textField.getText());
+            operacao = 1; // 1 significa adição
+            textField.setText("");
+        } else if (e.getSource() == buttonMenos) {
+            primeiroNumero = Double.parseDouble(textField.getText());
+            operacao = 2; // 2 significa subtração
+            textField.setText("");
+        } else if (e.getSource() == buttonResultado) {
+            segundoNumero = Double.parseDouble(textField.getText());
+            if (1 == this.operacao) { // adição
+                resultado = primeiroNumero + segundoNumero;
+            } else if (2 == this.operacao) { // subtração
+                resultado = primeiroNumero - segundoNumero;
+            }
+            textField.setText(Double.toString(resultado));
+        } else if (e.getSource() == buttonLimpar) {
+            textField.setText("");
         }
     }
 }
+
+
