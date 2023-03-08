@@ -1,14 +1,14 @@
-package Poo;
+package ImparEpar;
 
 public class ParOuImpar {
     private final int valor;
 
-    public ParOuImpar(final int valor) {
+    public ParOuImpar(int valor) {
         this.valor = valor;
     }
 
     public boolean ehPar() {
-        return (0 == valor % 2);
+        return (0 == this.valor % 2);
     }
 
 }
