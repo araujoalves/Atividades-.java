@@ -4,7 +4,7 @@ public enum TestaCalculadora {
     ;
 
 
-    public static void main(final String[] args) {
+    public static void main(String[] args) {
 
 //        Calculadora calculadora = new Calculadora();
 //
@@ -17,7 +17,7 @@ public enum TestaCalculadora {
 //        System.out.println(resulado);
 
 
-        final CalculadoraV2 calc = new CalculadoraV2();
+        CalculadoraV2 calc = new CalculadoraV2();
 
 //        calc.entrada(55);
 //        calc.setOperador(TipoOperador.SOMA);
@@ -27,7 +27,7 @@ public enum TestaCalculadora {
         calc.entrada(55);
         calc.setOperador(TipoOperador.RAIZ_QUADRADA);
         calc.entrada(10);
-        final double result = calc.getResultado();
+        double result = calc.getResultado();
 
         System.out.println(result);
 

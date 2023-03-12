@@ -7,11 +7,11 @@ public enum TipoOperador {
 
     private final String sinal;
 
-    TipoOperador(final String sinal) {
+    TipoOperador(String sinal) {
         this.sinal = sinal;
     }
 
-    public static double calcular(final TipoOperador tipo, final double num1, final double num2) {
+    public static double calcular(TipoOperador tipo, double num1, double num2) {
         switch (tipo) {
             case SOMA:
                 return num1 + num2;

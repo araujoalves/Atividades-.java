@@ -4,6 +4,8 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Descontos" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Fgts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/QUIZ EM JAVA 4/VerificarSenha" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Senha/VerificarSenha" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SistemaEstacionamento/QUIZ EM JAVA 4/VerificarSenha" vcs="Git" />
   </component>
 </project>

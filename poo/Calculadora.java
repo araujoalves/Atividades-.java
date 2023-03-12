@@ -5,42 +5,42 @@ public class Calculadora {
     private double resultado;
     private String operador = "";
 
-    public void entrada(final double valor) {
+    public void entrada(double valor) {
 
-        if ("".equals(operador)) {
-            this.resultado = valor;
+        if ("".equals(this.operador)) {
+            resultado = valor;
         } else {
-            this.calcular(valor);
+            calcular(valor);
         }
 
     }
 
-    public void setOperador(final String operador) {
+    public void setOperador(String operador) {
         this.operador = operador;
     }
 
     public double getResultado() {
-        return this.resultado;
+        return resultado;
     }
 
-    private void calcular(final double numero) {
+    private void calcular(double numero) {
 
-        switch (this.operador) {
+        switch (operador) {
             case "+":
-                this.resultado += numero;
+                resultado += numero;
                 break;
             case "-":
-                this.resultado -= numero;
+                resultado -= numero;
                 break;
             case "*":
-                this.resultado *= numero;
+                resultado *= numero;
                 break;
             case "/":
-                this.resultado /= numero;
+                resultado /= numero;
                 break;
             default:
                 return;
         }
-        this.operador = "";
+        operador = "";
     }
 }
