@@ -5,25 +5,25 @@ public class CalculadoraV2 {
     private double resultado;
     private TipoOperador operador = TipoOperador.NENHUM;
 
-    public void entrada(final double valor) {
-        if (this.operador == TipoOperador.NENHUM) {
-            this.resultado = valor;
+    public void entrada(double valor) {
+        if (TipoOperador.NENHUM == this.operador) {
+            resultado = valor;
         } else {
-            this.calcular(valor);
+            calcular(valor);
         }
     }
 
-    public void setOperador(final TipoOperador operador) {
+    public void setOperador(TipoOperador operador) {
         this.operador = operador;
     }
 
     public double getResultado() {
-        return this.resultado;
+        return resultado;
     }
 
-    private void calcular(final double numero) {
-        this.resultado = TipoOperador.calcular(this.operador, this.resultado, numero);
-        this.operador = TipoOperador.NENHUM;
+    private void calcular(double numero) {
+        resultado = TipoOperador.calcular(operador, resultado, numero);
+        operador = TipoOperador.NENHUM;
     }
 
 }
