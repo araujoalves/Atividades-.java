@@ -3,9 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../ContaCliente/ContaCliente.iml" filepath="$PROJECT_DIR$/../../ContaCliente/ContaCliente.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Controle/Controle.iml" filepath="$PROJECT_DIR$/../../Controle/Controle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Controle01/Controle01.iml" filepath="$PROJECT_DIR$/../../Controle01/Controle01.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../CursoAda/CursoAda.iml" filepath="$PROJECT_DIR$/../../CursoAda/CursoAda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Data/Data.iml" filepath="$PROJECT_DIR$/../../Data/Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Elevador/Elevador.iml" filepath="$PROJECT_DIR$/../../Elevador/Elevador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Lampada/Lampada.iml" filepath="$PROJECT_DIR$/../../Lampada/Lampada.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Lampada02/Lampada02.iml" filepath="$PROJECT_DIR$/../../Lampada02/Lampada02.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Livraria/Livraria.iml" filepath="$PROJECT_DIR$/../../Livraria/Livraria.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Supermercado/Supermercado.iml" filepath="$PROJECT_DIR$/../../Supermercado/Supermercado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../contador/contador.iml" filepath="$PROJECT_DIR$/../../contador/contador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../quadrado/quadrado.iml" filepath="$PROJECT_DIR$/../../quadrado/quadrado.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../ventilador/ventilador.iml" filepath="$PROJECT_DIR$/../../ventilador/ventilador.iml" />
     </modules>
   </component>
